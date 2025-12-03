@@ -1,0 +1,85 @@
+:root {
+  --gradient-1: #1e3c72;
+  --gradient-2: #2a5298;
+  --accent: #ff6b5a;
+  --text: #fff;
+  --card-bg: rgba(255,255,255,0.12);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
+  color: var(--text);
+  text-align: center;
+}
+
+.header {
+  padding: 40px 20px;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  backdrop-filter: blur(8px);
+}
+
+.readings {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.reading {
+  font-size: 20px;
+}
+
+.reading label {
+  display: block;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.button {
+  background: var(--accent);
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.status {
+  margin-top: 15px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+#log {
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#log li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.footer {
+  margin: 40px 0 20px;
+  opacity: 0.7;
+}

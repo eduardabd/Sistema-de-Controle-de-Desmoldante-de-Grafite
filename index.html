@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Controle de Desmoldante</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Sistema de Controle de Desmoldante</h1>
+    <p>Monitoramento direto da planilha Google Sheets</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Leituras Atuais</h2>
+
+      <div class="readings">
+        <div class="reading">
+          <label>Temperatura</label>
+          <span id="temp">-- °C</span>
+        </div>
+
+        <div class="reading">
+          <label>Pressão</label>
+          <span id="press">-- hPa</span>
+        </div>
+
+        <div class="reading">
+          <label>Altitude</label>
+          <span id="alt">-- m</span>
+        </div>
+      </div>
+
+      <button id="refreshBtn" class="button">Atualizar Agora</button>
+
+      <p id="status" class="status">Aguardando atualização...</p>
+    </section>
+
+    <section class="card">
+      <h2>Histórico de Leituras</h2>
+      <ul id="log"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 — Sistema de Monitoramento</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
